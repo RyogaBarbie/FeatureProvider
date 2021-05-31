@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:AppCore/AppCore.xcodeproj">
+   </FileRef>
+   <Group
+      location = "container:"
+      name = "Features">
+      <FileRef
+         location = "group:Features/FeatureThree/FeatureThree.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Features/FeatureTwo/FeatureTwo.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Features/FeatureOne/FeatureOne.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "AppProvider">
+      <FileRef
+         location = "group:AppProvider/AppProvider.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "FeatureProvider">
+   </Group>
+   <Group
+      location = "container:"
+      name = "VcProvider">
+   </Group>
+</Workspace>
