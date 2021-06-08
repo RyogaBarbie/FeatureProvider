@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AD096899266480920024BC4B /* libAppCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD096898266480920024BC4B /* libAppCore.a */; };
-		AD0968AB2664815C0024BC4B /* FeatureTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0968AA2664815C0024BC4B /* FeatureTwoViewController.swift */; };
+		AD0968AB2664815C0024BC4B /* FeatureTwoHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0968AA2664815C0024BC4B /* FeatureTwoHomeViewController.swift */; };
+		ADA81AB9266F1E2800A7E520 /* SomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA81AB8266F1E2800A7E520 /* SomeWorker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +27,8 @@
 /* Begin PBXFileReference section */
 		AD096877266480150024BC4B /* libFeatureTwo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFeatureTwo.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD096898266480920024BC4B /* libAppCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAppCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD0968AA2664815C0024BC4B /* FeatureTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureTwoViewController.swift; sourceTree = "<group>"; };
+		AD0968AA2664815C0024BC4B /* FeatureTwoHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureTwoHomeViewController.swift; sourceTree = "<group>"; };
+		ADA81AB8266F1E2800A7E520 /* SomeWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeWorker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +63,8 @@
 		AD096879266480150024BC4B /* FeatureTwo */ = {
 			isa = PBXGroup;
 			children = (
-				AD0968AA2664815C0024BC4B /* FeatureTwoViewController.swift */,
+				AD0968AA2664815C0024BC4B /* FeatureTwoHomeViewController.swift */,
+				ADA81AB8266F1E2800A7E520 /* SomeWorker.swift */,
 			);
 			path = FeatureTwo;
 			sourceTree = "<group>";
@@ -132,7 +135,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD0968AB2664815C0024BC4B /* FeatureTwoViewController.swift in Sources */,
+				AD0968AB2664815C0024BC4B /* FeatureTwoHomeViewController.swift in Sources */,
+				ADA81AB9266F1E2800A7E520 /* SomeWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

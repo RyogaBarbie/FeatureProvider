@@ -1,20 +1,28 @@
 //
-//  FeatureThreeViewController.swift
+//  FeatureThreeShowViewController.swift
 //  FeatureThree
 //
 //  Created by yamamura ryoga on 2021/05/31.
 //
 
 import UIKit
+import AppCore
 
-class FeatureThreeViewController: UIViewController {
+public class FeatureThreeShowViewController: UIViewController {
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
 
-        print("Feature Three")
+        print("Feature Three Show")
     }
     
+    public init() {
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     /*
     // MARK: - Navigation

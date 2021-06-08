@@ -6,14 +6,21 @@
 //
 
 import UIKit
+import AppCore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        let appProvider = AppProvider()
+
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let request = FeatureOneHomeRequest(pageNumber: 0)
+        window!.rootViewController = appProvider.apply(request)
+        window!.makeKeyAndVisible()
+
         return true
     }
 

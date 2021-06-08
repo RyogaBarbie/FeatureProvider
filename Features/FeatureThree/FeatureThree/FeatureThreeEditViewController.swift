@@ -1,20 +1,28 @@
 //
-//  FeatureTwoViewController.swift
-//  FeatureTwo
+//  FeatureThreeEditViewController.swift
+//  FeatureThree
 //
 //  Created by yamamura ryoga on 2021/05/31.
 //
 
 import UIKit
+import AppCore
 
-class FeatureTwoViewController: UIViewController {
+public class FeatureThreeEditViewController: UIViewController {
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
 
-        print("Feature Two")
+        print("Feature Three Edit")
     }
     
+    public init() {
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     /*
     // MARK: - Navigation

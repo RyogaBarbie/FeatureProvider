@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AD09684326647E740024BC4B /* AppProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD09684226647E740024BC4B /* AppProvider.swift */; };
+		AD09684326647E740024BC4B /* AppProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD09684226647E740024BC4B /* AppProviderProtocol.swift */; };
 		AD09684526647E7D0024BC4B /* FeatureProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD09684426647E7D0024BC4B /* FeatureProvider.swift */; };
 		AD09684726647E950024BC4B /* VcProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD09684626647E950024BC4B /* VcProvider.swift */; };
+		AD0968C6266484A70024BC4B /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0968C5266484A70024BC4B /* Requests.swift */; };
+		ADA819C826663A0A00A7E520 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA819C726663A0A00A7E520 /* Dependencies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,9 +28,11 @@
 
 /* Begin PBXFileReference section */
 		AD09683826647E270024BC4B /* libAppCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAppCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD09684226647E740024BC4B /* AppProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProvider.swift; sourceTree = "<group>"; };
+		AD09684226647E740024BC4B /* AppProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProviderProtocol.swift; sourceTree = "<group>"; };
 		AD09684426647E7D0024BC4B /* FeatureProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureProvider.swift; sourceTree = "<group>"; };
 		AD09684626647E950024BC4B /* VcProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VcProvider.swift; sourceTree = "<group>"; };
+		AD0968C5266484A70024BC4B /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
+		ADA819C726663A0A00A7E520 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +65,29 @@
 		AD09683A26647E270024BC4B /* AppCore */ = {
 			isa = PBXGroup;
 			children = (
-				AD09684226647E740024BC4B /* AppProvider.swift */,
+				AD0968C4266484470024BC4B /* FeatureInterfaces */,
+				AD0968C32664843D0024BC4B /* FeatureProvider */,
+				ADA819C726663A0A00A7E520 /* Dependencies.swift */,
+			);
+			path = AppCore;
+			sourceTree = "<group>";
+		};
+		AD0968C32664843D0024BC4B /* FeatureProvider */ = {
+			isa = PBXGroup;
+			children = (
+				AD09684226647E740024BC4B /* AppProviderProtocol.swift */,
 				AD09684426647E7D0024BC4B /* FeatureProvider.swift */,
 				AD09684626647E950024BC4B /* VcProvider.swift */,
 			);
-			path = AppCore;
+			path = FeatureProvider;
+			sourceTree = "<group>";
+		};
+		AD0968C4266484470024BC4B /* FeatureInterfaces */ = {
+			isa = PBXGroup;
+			children = (
+				AD0968C5266484A70024BC4B /* Requests.swift */,
+			);
+			path = FeatureInterfaces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +148,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD09684526647E7D0024BC4B /* FeatureProvider.swift in Sources */,
+				AD0968C6266484A70024BC4B /* Requests.swift in Sources */,
 				AD09684726647E950024BC4B /* VcProvider.swift in Sources */,
-				AD09684326647E740024BC4B /* AppProvider.swift in Sources */,
+				ADA819C826663A0A00A7E520 /* Dependencies.swift in Sources */,
+				AD09684326647E740024BC4B /* AppProviderProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

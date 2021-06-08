@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		AD09689C266480A20024BC4B /* libAppCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD09689B266480A20024BC4B /* libAppCore.a */; };
-		AD0968A72664811F0024BC4B /* FeatureOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0968A62664811F0024BC4B /* FeatureOneViewController.swift */; };
+		AD0968A72664811F0024BC4B /* FeatureOneHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0968A62664811F0024BC4B /* FeatureOneHomeViewController.swift */; };
+		ADA8197B2664B07900A7E520 /* FeatureOneShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8197A2664B07900A7E520 /* FeatureOneShowViewController.swift */; };
+		ADA8197D2664B16600A7E520 /* FeatureOneEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8197C2664B16600A7E520 /* FeatureOneEditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +28,9 @@
 /* Begin PBXFileReference section */
 		AD09686426647FA20024BC4B /* libFeatureOne.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFeatureOne.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD09689B266480A20024BC4B /* libAppCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAppCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD0968A62664811F0024BC4B /* FeatureOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureOneViewController.swift; sourceTree = "<group>"; };
+		AD0968A62664811F0024BC4B /* FeatureOneHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureOneHomeViewController.swift; sourceTree = "<group>"; };
+		ADA8197A2664B07900A7E520 /* FeatureOneShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureOneShowViewController.swift; sourceTree = "<group>"; };
+		ADA8197C2664B16600A7E520 /* FeatureOneEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureOneEditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +65,7 @@
 		AD09686626647FA20024BC4B /* FeatureOne */ = {
 			isa = PBXGroup;
 			children = (
-				AD0968A62664811F0024BC4B /* FeatureOneViewController.swift */,
+				ADA819AD2664DD6E00A7E520 /* Vc */,
 			);
 			path = FeatureOne;
 			sourceTree = "<group>";
@@ -72,6 +76,16 @@
 				AD09689B266480A20024BC4B /* libAppCore.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADA819AD2664DD6E00A7E520 /* Vc */ = {
+			isa = PBXGroup;
+			children = (
+				AD0968A62664811F0024BC4B /* FeatureOneHomeViewController.swift */,
+				ADA8197A2664B07900A7E520 /* FeatureOneShowViewController.swift */,
+				ADA8197C2664B16600A7E520 /* FeatureOneEditViewController.swift */,
+			);
+			path = Vc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,7 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD0968A72664811F0024BC4B /* FeatureOneViewController.swift in Sources */,
+				AD0968A72664811F0024BC4B /* FeatureOneHomeViewController.swift in Sources */,
+				ADA8197D2664B16600A7E520 /* FeatureOneEditViewController.swift in Sources */,
+				ADA8197B2664B07900A7E520 /* FeatureOneShowViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

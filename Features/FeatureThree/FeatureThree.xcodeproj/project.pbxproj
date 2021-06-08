@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		AD096896266480870024BC4B /* libAppCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD096895266480870024BC4B /* libAppCore.a */; };
-		AD0968A92664814E0024BC4B /* FeatureThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0968A82664814E0024BC4B /* FeatureThreeViewController.swift */; };
+		AD0968A92664814E0024BC4B /* FeatureThreeHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0968A82664814E0024BC4B /* FeatureThreeHomeViewController.swift */; };
+		ADA81ABB266F1E4B00A7E520 /* SomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA81ABA266F1E4B00A7E520 /* SomeRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +27,8 @@
 /* Begin PBXFileReference section */
 		AD09688A266480730024BC4B /* libFeatureThree.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFeatureThree.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD096895266480870024BC4B /* libAppCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAppCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD0968A82664814E0024BC4B /* FeatureThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureThreeViewController.swift; sourceTree = "<group>"; };
+		AD0968A82664814E0024BC4B /* FeatureThreeHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureThreeHomeViewController.swift; sourceTree = "<group>"; };
+		ADA81ABA266F1E4B00A7E520 /* SomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +63,8 @@
 		AD09688C266480730024BC4B /* FeatureThree */ = {
 			isa = PBXGroup;
 			children = (
-				AD0968A82664814E0024BC4B /* FeatureThreeViewController.swift */,
+				AD0968A82664814E0024BC4B /* FeatureThreeHomeViewController.swift */,
+				ADA81ABA266F1E4B00A7E520 /* SomeRepository.swift */,
 			);
 			path = FeatureThree;
 			sourceTree = "<group>";
@@ -132,7 +135,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD0968A92664814E0024BC4B /* FeatureThreeViewController.swift in Sources */,
+				AD0968A92664814E0024BC4B /* FeatureThreeHomeViewController.swift in Sources */,
+				ADA81ABB266F1E4B00A7E520 /* SomeRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
