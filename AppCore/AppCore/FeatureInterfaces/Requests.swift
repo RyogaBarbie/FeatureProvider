@@ -17,12 +17,33 @@ public struct FeatureOneHomeRequest {
     }
 }
 
-public struct FeatureOneShowRequest {}
-public struct FeatureOneEditRequest {}
+public struct FeatureOneShowRequest {
+    public let status: Status
+    public let pageNumber: Int
+    public let user: User
+
+    public init(
+        status: Status,
+        pageNumber: Int,
+        user: User
+    ) {
+        self.status = status
+        self.pageNumber = pageNumber
+        self.user = user
+    }
+}
+
+public struct FeatureOneEditRequest {
+    public let user: User
+
+    public init(
+        user: User
+    ) {
+        self.user = user
+    }
+
+}
 
 public struct FeatureTwoHomeRequest {}
-public struct FeatureTwoShowRequest {}
 
 public struct FeatureThreeHomeRequest {}
-public struct FeatureThreeShowRequest {}
-public struct FeatureThreeEditRequest {}

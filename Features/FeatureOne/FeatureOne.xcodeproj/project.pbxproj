@@ -65,7 +65,9 @@
 		AD09686626647FA20024BC4B /* FeatureOne */ = {
 			isa = PBXGroup;
 			children = (
-				ADA819AD2664DD6E00A7E520 /* Vc */,
+				AD0968A62664811F0024BC4B /* FeatureOneHomeViewController.swift */,
+				ADA8197A2664B07900A7E520 /* FeatureOneShowViewController.swift */,
+				ADA8197C2664B16600A7E520 /* FeatureOneEditViewController.swift */,
 			);
 			path = FeatureOne;
 			sourceTree = "<group>";
@@ -76,16 +78,6 @@
 				AD09689B266480A20024BC4B /* libAppCore.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		ADA819AD2664DD6E00A7E520 /* Vc */ = {
-			isa = PBXGroup;
-			children = (
-				AD0968A62664811F0024BC4B /* FeatureOneHomeViewController.swift */,
-				ADA8197A2664B07900A7E520 /* FeatureOneShowViewController.swift */,
-				ADA8197C2664B16600A7E520 /* FeatureOneEditViewController.swift */,
-			);
-			path = Vc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

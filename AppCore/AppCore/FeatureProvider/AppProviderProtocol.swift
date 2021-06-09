@@ -10,7 +10,7 @@ import UIKit
 
 public protocol AppProviderProtocol {
     func apply(_ request: FeatureOneHomeRequest) -> UIViewController
-//    func apply(_ request: FeatureOneShowRequest) -> UIViewController
+    func apply(_ request: FeatureOneShowRequest) -> UIViewController
 //    func apply(_ request: FeatureOneEditRequest) -> UIViewController
 //    func apply(_ request: FeatureTwoHomeRequest) -> UIViewController
 //    func apply(_ request: FeatureThreeHomeRequest) -> UIViewController

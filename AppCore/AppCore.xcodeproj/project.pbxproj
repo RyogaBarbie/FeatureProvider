@@ -12,6 +12,8 @@
 		AD09684726647E950024BC4B /* VcProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD09684626647E950024BC4B /* VcProvider.swift */; };
 		AD0968C6266484A70024BC4B /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0968C5266484A70024BC4B /* Requests.swift */; };
 		ADA819C826663A0A00A7E520 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA819C726663A0A00A7E520 /* Dependencies.swift */; };
+		ADA81ABD266F695E00A7E520 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA81ABC266F695E00A7E520 /* Status.swift */; };
+		ADA81ABF266F6A9B00A7E520 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA81ABE266F6A9B00A7E520 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +35,8 @@
 		AD09684626647E950024BC4B /* VcProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VcProvider.swift; sourceTree = "<group>"; };
 		AD0968C5266484A70024BC4B /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 		ADA819C726663A0A00A7E520 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		ADA81ABC266F695E00A7E520 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		ADA81ABE266F6A9B00A7E520 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				AD0968C5266484A70024BC4B /* Requests.swift */,
+				ADA81ABC266F695E00A7E520 /* Status.swift */,
+				ADA81ABE266F6A9B00A7E520 /* User.swift */,
 			);
 			path = FeatureInterfaces;
 			sourceTree = "<group>";
@@ -152,6 +158,8 @@
 				AD09684726647E950024BC4B /* VcProvider.swift in Sources */,
 				ADA819C826663A0A00A7E520 /* Dependencies.swift in Sources */,
 				AD09684326647E740024BC4B /* AppProviderProtocol.swift in Sources */,
+				ADA81ABD266F695E00A7E520 /* Status.swift in Sources */,
+				ADA81ABF266F6A9B00A7E520 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

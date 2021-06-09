@@ -21,9 +21,16 @@ class AppProvider: AppProviderProtocol {
             someRepository: SomeRepository()
         )
     }
-//    func apply(_ request: FeatureOneShowRequest) -> UIViewController {
-//        FeatureOneShowViewController()
-//    }
+    func apply(_ request: FeatureOneShowRequest) -> UIViewController {
+        return FeatureOneShowBuilder.build(
+            status: request.status,
+            pageNumber: request.pageNumber,
+            user: request.user,
+            appProvider: self,
+            someWorker: SomeWorker(),
+            someRepository: SomeRepository()
+        )
+    }
 //    func apply(_ request: FeatureOneEditRequest) -> UIViewController {
 //        FeatureOneEditViewController()
 //    }

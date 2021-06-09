@@ -1,5 +1,5 @@
 //
-//  FeatureOneHomeViewController.swift
+//  FeatureOneShowViewController.swift
 //  FeatureOne
 //
 //  Created by yamamura ryoga on 2021/05/31.
@@ -8,44 +8,56 @@
 import UIKit
 import AppCore
 
-public enum FeatureOneHomeBuilder {
+// builder以外をinternalにしてUIViewControllerに隠蔽するtype
+
+public enum FeatureOneShowBuilder {
     public static func build(
+        status: Status,
         pageNumber: Int,
+        user: User,
         appProvider: AppProviderProtocol,
         someWorker: SomeWorkerProtocol,
         someRepository: SomeRepositoryProtocol
-    ) -> FeatureOneHomeViewController {
-        let useCase = FeatureOneHomeUsecse(
+    ) -> UIViewController {
+        let useCase = FeatureOneShowUsecse(
             apiClient: APIClient(),
             dataStore: DataStore(),
             remocon: RemoteConfig(),
             someWorker: someWorker,
             someRepository: someRepository
         )
-        let vm = FeatureOneHomeViewModel(
+        let vm = FeatureOneShowViewModel(
             useCase: useCase,
-            pageNumber: pageNumber
+            status: status,
+            pageNumber: pageNumber,
+            user: user
         )
-        return FeatureOneHomeViewController(
+        return FeatureOneShowViewController(
             appProvider: appProvider,
             vm: vm
         )
     }
 }
-
-public class FeatureOneHomeViewModel {
-    let useCase: FeatureOneHomeUsecse
+class FeatureOneShowViewModel {
+    let useCase: FeatureOneShowUsecse
+    let status: Status
     var pageNumber: Int
+    let user: User
+
     init(
-        useCase: FeatureOneHomeUsecse,
-        pageNumber: Int
+        useCase: FeatureOneShowUsecse,
+        status: Status,
+        pageNumber: Int,
+        user: User
     ) {
         self.useCase = useCase
+        self.status = status
         self.pageNumber = pageNumber
+        self.user = user
     }
 }
 
-public class FeatureOneHomeUsecse {
+class FeatureOneShowUsecse {
     let apiClient: APIClientProtocol
     let dataStore: DataStoreProtocol
     let remocon: RemoteConfigProtocol
@@ -67,14 +79,15 @@ public class FeatureOneHomeUsecse {
     }
 }
 
-public class FeatureOneHomeViewController: UIViewController {
+
+class FeatureOneShowViewController: UIViewController {
 
     let appProvider: AppProviderProtocol
-    let vm: FeatureOneHomeViewModel
+    let vm: FeatureOneShowViewModel
 
-    public init(
+    init(
         appProvider: AppProviderProtocol,
-        vm: FeatureOneHomeViewModel
+        vm: FeatureOneShowViewModel
     ) {
         self.appProvider = appProvider
         self.vm = vm
@@ -89,10 +102,6 @@ public class FeatureOneHomeViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
 
-        print("Feature One Home")
+        print("Feature One Show")
     }
-
-    func routeToFeatureOneShow() {}// TODO: implement
-
-    func routeToFeatureSecondHome() {}// TODO: implement
 }
