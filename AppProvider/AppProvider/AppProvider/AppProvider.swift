@@ -13,6 +13,10 @@ import FeatureTwo
 import FeatureThree
 
 class AppProvider: AppProviderProtocol {
+    // 既存のGodRouterの取り回し
+    func navigate(_ destination: RouterDestination) {
+        Router.navigate(destination)
+    }
     func apply(_ request: FeatureOneHomeRequest) -> UIViewController {
         return FeatureOneHomeBuilder.build(
             pageNumber: request.pageNumber,
@@ -31,6 +35,8 @@ class AppProvider: AppProviderProtocol {
             someRepository: SomeRepository()
         )
     }
+
+    
 //    func apply(_ request: FeatureOneEditRequest) -> UIViewController {
 //        FeatureOneEditViewController()
 //    }
