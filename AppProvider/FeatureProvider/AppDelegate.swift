@@ -11,8 +11,13 @@ import AppCore
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
+    // 既存のKURASHIRU実装
+    var baseTabBarController: BaseTabBarController!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
+        // 既存のKURASHIRU実装
+        baseTabBarController = BaseTabBarController()
 
         let featureProvider = FeatureProvider()
 

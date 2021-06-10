@@ -10,6 +10,7 @@ import UIKit
 
 public protocol FeatureProviderProtocol {
     func navigate(_ router: Router)
+    func moveToTab(_ tab: Tab)
     func apply(_ request: FeatureOneHomeRequest) -> UIViewController
     func apply(_ request: FeatureOneShowRequest) -> UIViewController
     func apply(_ request: FeatureOneEditRequest) -> UIViewController

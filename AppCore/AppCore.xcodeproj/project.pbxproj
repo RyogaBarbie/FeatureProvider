@@ -13,6 +13,7 @@
 		ADA81ABD266F695E00A7E520 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA81ABC266F695E00A7E520 /* Status.swift */; };
 		ADA81ABF266F6A9B00A7E520 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA81ABE266F6A9B00A7E520 /* User.swift */; };
 		ADA81AC12670CBD700A7E520 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA81AC02670CBD700A7E520 /* Router.swift */; };
+		ADA81B242671E86500A7E520 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA81B232671E86500A7E520 /* Tab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		ADA81ABC266F695E00A7E520 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		ADA81ABE266F6A9B00A7E520 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		ADA81AC02670CBD700A7E520 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		ADA81B232671E86500A7E520 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				AD0968C5266484A70024BC4B /* Requests.swift */,
 				ADA81ABC266F695E00A7E520 /* Status.swift */,
 				ADA81ABE266F6A9B00A7E520 /* User.swift */,
+				ADA81B232671E86500A7E520 /* Tab.swift */,
 			);
 			path = FeatureInterfaces;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 				AD09684326647E740024BC4B /* FeatureProviderProtocol.swift in Sources */,
 				ADA81ABD266F695E00A7E520 /* Status.swift in Sources */,
 				ADA81ABF266F6A9B00A7E520 /* User.swift in Sources */,
+				ADA81B242671E86500A7E520 /* Tab.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

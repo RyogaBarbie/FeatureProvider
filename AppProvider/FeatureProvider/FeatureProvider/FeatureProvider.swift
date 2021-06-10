@@ -18,6 +18,12 @@ class FeatureProvider: FeatureProviderProtocol {
         router.navigate()
     }
 
+    // 既存のTab周りの移動をラップ
+    func moveToTab(_ tab: Tab) {
+        guard let baseTabBarController = (UIApplication.shared.delegate as? AppDelegate)?.baseTabBarController else { return }
+        baseTabBarController.moveToTab(tab)
+    }
+
     func apply(_ request: FeatureOneHomeRequest) -> UIViewController {
         return FeatureOneHomeBuilder.build(
             pageNumber: request.pageNumber,
