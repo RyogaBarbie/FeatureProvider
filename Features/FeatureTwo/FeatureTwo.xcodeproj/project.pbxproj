@@ -10,6 +10,7 @@
 		AD096899266480920024BC4B /* libAppCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD096898266480920024BC4B /* libAppCore.a */; };
 		AD0968AB2664815C0024BC4B /* FeatureTwoHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0968AA2664815C0024BC4B /* FeatureTwoHomeViewController.swift */; };
 		ADA81AB9266F1E2800A7E520 /* SomeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA81AB8266F1E2800A7E520 /* SomeWorker.swift */; };
+		ADA81B1C2671B72300A7E520 /* FeatureTwoProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA81B1B2671B72300A7E520 /* FeatureTwoProviderProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		AD096898266480920024BC4B /* libAppCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAppCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD0968AA2664815C0024BC4B /* FeatureTwoHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureTwoHomeViewController.swift; sourceTree = "<group>"; };
 		ADA81AB8266F1E2800A7E520 /* SomeWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeWorker.swift; sourceTree = "<group>"; };
+		ADA81B1B2671B72300A7E520 /* FeatureTwoProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureTwoProviderProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		AD096879266480150024BC4B /* FeatureTwo */ = {
 			isa = PBXGroup;
 			children = (
+				ADA81B1A2671B4D500A7E520 /* FeatureTwoProvider */,
 				AD0968AA2664815C0024BC4B /* FeatureTwoHomeViewController.swift */,
 				ADA81AB8266F1E2800A7E520 /* SomeWorker.swift */,
 			);
@@ -75,6 +78,14 @@
 				AD096898266480920024BC4B /* libAppCore.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADA81B1A2671B4D500A7E520 /* FeatureTwoProvider */ = {
+			isa = PBXGroup;
+			children = (
+				ADA81B1B2671B72300A7E520 /* FeatureTwoProviderProtocol.swift */,
+			);
+			path = FeatureTwoProvider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD0968AB2664815C0024BC4B /* FeatureTwoHomeViewController.swift in Sources */,
+				ADA81B1C2671B72300A7E520 /* FeatureTwoProviderProtocol.swift in Sources */,
 				ADA81AB9266F1E2800A7E520 /* SomeWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

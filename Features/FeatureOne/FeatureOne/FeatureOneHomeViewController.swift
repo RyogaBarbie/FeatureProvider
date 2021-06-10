@@ -11,7 +11,7 @@ import AppCore
 public enum FeatureOneHomeBuilder {
     public static func build(
         pageNumber: Int,
-        appProvider: AppProviderProtocol,
+        featureProvider: FeatureProviderProtocol,
         someWorker: SomeWorkerProtocol,
         someRepository: SomeRepositoryProtocol
     ) -> FeatureOneHomeViewController {
@@ -27,13 +27,13 @@ public enum FeatureOneHomeBuilder {
             pageNumber: pageNumber
         )
         return FeatureOneHomeViewController(
-            appProvider: appProvider,
+            featureProvider: featureProvider,
             vm: vm
         )
     }
 }
 
-public class FeatureOneHomeViewModel {
+class FeatureOneHomeViewModel {
     let useCase: FeatureOneHomeUsecse
     var pageNumber: Int
     init(
@@ -45,7 +45,7 @@ public class FeatureOneHomeViewModel {
     }
 }
 
-public class FeatureOneHomeUsecse {
+class FeatureOneHomeUsecse {
     let apiClient: APIClientProtocol
     let dataStore: DataStoreProtocol
     let remocon: RemoteConfigProtocol
@@ -69,14 +69,14 @@ public class FeatureOneHomeUsecse {
 
 public class FeatureOneHomeViewController: UIViewController {
 
-    let appProvider: AppProviderProtocol
+    let featureProvider: FeatureProviderProtocol
     let vm: FeatureOneHomeViewModel
 
-    public init(
-        appProvider: AppProviderProtocol,
+    init(
+        featureProvider: FeatureProviderProtocol,
         vm: FeatureOneHomeViewModel
     ) {
-        self.appProvider = appProvider
+        self.featureProvider = featureProvider
         self.vm = vm
 
         super.init(nibName: nil, bundle: nil)
@@ -98,8 +98,17 @@ public class FeatureOneHomeViewController: UIViewController {
             pageNumber: 88,
             user: User(name: "Bob", age: 38, savings: 1000)
         )
-        _ = appProvider.apply(request)
+        let vc = featureProvider.apply(request)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 
-    func routeToFeatureSecondHome() {}// TODO: implement
+    func routeToFeatureSecondHome() {
+        let request = FeatureTwoHomeRequest(
+            status: .iPhone,
+            pageNumber: 88,
+            user: User(name: "Bob", age: 38, savings: 1000)
+        )
+        let vc = featureProvider.apply(request)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }

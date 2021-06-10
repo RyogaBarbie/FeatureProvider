@@ -1,0 +1,39 @@
+//
+//  FeatureTwoProvider.swift
+//  FeatureOneProvider
+//
+//  Created by yamamura ryoga on 2021/06/10.
+//
+
+import Foundation
+import UIKit
+import AppCore
+import FeatureOne
+import FeatureTwo
+import FeatureThree
+
+public class FeatureTwoProvider: FeatureTwoProviderProtocol {
+    public func navigate(_ router: Router) {
+//        router.navigate()
+    }
+
+//    func apply(_ request: FeatureOneShowRequest) -> UIViewController {
+//        return FeatureOneShowBuilder.build(
+//            pageNumber: request.pageNumber,
+//            featureProvider: self,
+//            someWorker: SomeWorker(),
+//            someRepository: SomeRepository()
+//        )
+//    }
+    
+//    func apply(_ request: FeatureThreeHomeRequest) -> UIViewController {
+//        return FeatureThreeHomeBuilder.build(
+//            status: request.status,
+//            pageNumber: request.pageNumber,
+//            user: request.user,
+//            featureProvider: self,
+//            someWorker: SomeWorker(),
+//            someRepository: SomeRepository()
+//        )
+//    }
+}

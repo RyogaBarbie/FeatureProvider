@@ -41,9 +41,36 @@ public struct FeatureOneEditRequest {
     ) {
         self.user = user
     }
-
 }
 
-public struct FeatureTwoHomeRequest {}
+public struct FeatureTwoHomeRequest {
+    public let status: Status
+    public let pageNumber: Int
+    public let user: User
 
-public struct FeatureThreeHomeRequest {}
+    public init(
+        status: Status,
+        pageNumber: Int,
+        user: User
+    ) {
+        self.status = status
+        self.pageNumber = pageNumber
+        self.user = user
+    }
+}
+
+public struct FeatureThreeHomeRequest {
+    public let status: Status
+    public let pageNumber: Int
+    public let user: User
+
+    public init(
+        status: Status,
+        pageNumber: Int,
+        user: User
+    ) {
+        self.status = status
+        self.pageNumber = pageNumber
+        self.user = user
+    }
+}

@@ -1,26 +1,19 @@
 //
 //  AppDelegate.swift
-//  AppProvider
+//  FeatureProvider
 //
-//  Created by yamamura ryoga on 2021/05/31.
+//  Created by yamamura ryoga on 2021/06/10.
 //
 
 import UIKit
-import AppCore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    var window: UIWindow?
+
+
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
-        let appProvider = AppProvider()
-
-        window = UIWindow(frame: UIScreen.main.bounds)
-        let request = FeatureOneHomeRequest(pageNumber: 0)
-        window!.rootViewController = appProvider.apply(request)
-        window!.makeKeyAndVisible()
-
+        // Override point for customization after application launch.
         return true
     }
 

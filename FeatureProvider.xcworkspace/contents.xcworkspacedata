@@ -19,14 +19,17 @@
    </Group>
    <Group
       location = "container:"
-      name = "AppProvider">
+      name = "FeatureProvider">
       <FileRef
          location = "group:AppProvider/AppProvider.xcodeproj">
       </FileRef>
    </Group>
    <Group
       location = "container:"
-      name = "FeatureProvider">
+      name = "FeatureOneProvider">
+      <FileRef
+         location = "group:FeatureOneProvider/FeatureOneProvider.xcodeproj">
+      </FileRef>
    </Group>
    <Group
       location = "container:"

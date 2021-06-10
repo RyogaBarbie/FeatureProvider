@@ -17,7 +17,7 @@
 		AD0968A3266480BB0024BC4B /* libFeatureOne.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD09689F266480BB0024BC4B /* libFeatureOne.a */; };
 		AD0968A4266480BB0024BC4B /* libFeatureThree.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD0968A0266480BB0024BC4B /* libFeatureThree.a */; };
 		AD0968A5266480BB0024BC4B /* libFeatureTwo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD0968A1266480BB0024BC4B /* libFeatureTwo.a */; };
-		AD0968C82664AE7B0024BC4B /* AppProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0968C72664AE7B0024BC4B /* AppProvider.swift */; };
+		AD0968C82664AE7B0024BC4B /* FeatureProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0968C72664AE7B0024BC4B /* FeatureProvider.swift */; };
 		ADA81AC32670D20D00A7E520 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA81AC22670D20D00A7E520 /* Router.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +34,7 @@
 		AD09689F266480BB0024BC4B /* libFeatureOne.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFeatureOne.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD0968A0266480BB0024BC4B /* libFeatureThree.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFeatureThree.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD0968A1266480BB0024BC4B /* libFeatureTwo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libFeatureTwo.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD0968C72664AE7B0024BC4B /* AppProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProvider.swift; sourceTree = "<group>"; };
+		AD0968C72664AE7B0024BC4B /* FeatureProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureProvider.swift; sourceTree = "<group>"; };
 		ADA81AC22670D20D00A7E520 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,7 +56,7 @@
 		AD09680F26647DCF0024BC4B = {
 			isa = PBXGroup;
 			children = (
-				AD09681A26647DCF0024BC4B /* AppProvider */,
+				AD09681A26647DCF0024BC4B /* FeatureProvider */,
 				AD09681926647DCF0024BC4B /* Products */,
 				AD09689D266480BB0024BC4B /* Frameworks */,
 			);
@@ -70,10 +70,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AD09681A26647DCF0024BC4B /* AppProvider */ = {
+		AD09681A26647DCF0024BC4B /* FeatureProvider */ = {
 			isa = PBXGroup;
 			children = (
-				ADA81AC52670D21A00A7E520 /* AppProvider */,
+				ADA81AC52670D21A00A7E520 /* FeatureProvider */,
 				ADA81AC42670D21100A7E520 /* Router */,
 				AD09681B26647DCF0024BC4B /* AppDelegate.swift */,
 				AD09681D26647DCF0024BC4B /* SceneDelegate.swift */,
@@ -83,7 +83,7 @@
 				AD09682626647DDA0024BC4B /* LaunchScreen.storyboard */,
 				AD09682926647DDA0024BC4B /* Info.plist */,
 			);
-			path = AppProvider;
+			path = FeatureProvider;
 			sourceTree = "<group>";
 		};
 		AD09689D266480BB0024BC4B /* Frameworks */ = {
@@ -105,12 +105,12 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
-		ADA81AC52670D21A00A7E520 /* AppProvider */ = {
+		ADA81AC52670D21A00A7E520 /* FeatureProvider */ = {
 			isa = PBXGroup;
 			children = (
-				AD0968C72664AE7B0024BC4B /* AppProvider.swift */,
+				AD0968C72664AE7B0024BC4B /* FeatureProvider.swift */,
 			);
-			path = AppProvider;
+			path = FeatureProvider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,7 +186,7 @@
 				AD09682026647DCF0024BC4B /* ViewController.swift in Sources */,
 				AD09681C26647DCF0024BC4B /* AppDelegate.swift in Sources */,
 				ADA81AC32670D20D00A7E520 /* Router.swift in Sources */,
-				AD0968C82664AE7B0024BC4B /* AppProvider.swift in Sources */,
+				AD0968C82664AE7B0024BC4B /* FeatureProvider.swift in Sources */,
 				AD09681E26647DCF0024BC4B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,12 +336,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CMZ8NMX69N;
-				INFOPLIST_FILE = AppProvider/Info.plist;
+				INFOPLIST_FILE = FeatureProvider/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = y.ryoga.AppProvider;
+				PRODUCT_BUNDLE_IDENTIFIER = y.ryoga.FeatureProvider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -355,12 +355,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CMZ8NMX69N;
-				INFOPLIST_FILE = AppProvider/Info.plist;
+				INFOPLIST_FILE = FeatureProvider/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = y.ryoga.AppProvider;
+				PRODUCT_BUNDLE_IDENTIFIER = y.ryoga.FeatureProvider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

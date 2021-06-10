@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AD09684326647E740024BC4B /* AppProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD09684226647E740024BC4B /* AppProviderProtocol.swift */; };
-		AD09684526647E7D0024BC4B /* FeatureProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD09684426647E7D0024BC4B /* FeatureProvider.swift */; };
-		AD09684726647E950024BC4B /* VcProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD09684626647E950024BC4B /* VcProvider.swift */; };
+		AD09684326647E740024BC4B /* FeatureProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD09684226647E740024BC4B /* FeatureProviderProtocol.swift */; };
 		AD0968C6266484A70024BC4B /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0968C5266484A70024BC4B /* Requests.swift */; };
 		ADA819C826663A0A00A7E520 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA819C726663A0A00A7E520 /* Dependencies.swift */; };
 		ADA81ABD266F695E00A7E520 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA81ABC266F695E00A7E520 /* Status.swift */; };
@@ -31,9 +29,7 @@
 
 /* Begin PBXFileReference section */
 		AD09683826647E270024BC4B /* libAppCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAppCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD09684226647E740024BC4B /* AppProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProviderProtocol.swift; sourceTree = "<group>"; };
-		AD09684426647E7D0024BC4B /* FeatureProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureProvider.swift; sourceTree = "<group>"; };
-		AD09684626647E950024BC4B /* VcProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VcProvider.swift; sourceTree = "<group>"; };
+		AD09684226647E740024BC4B /* FeatureProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureProviderProtocol.swift; sourceTree = "<group>"; };
 		AD0968C5266484A70024BC4B /* Requests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
 		ADA819C726663A0A00A7E520 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
 		ADA81ABC266F695E00A7E520 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
@@ -82,9 +78,7 @@
 		AD0968C32664843D0024BC4B /* FeatureProvider */ = {
 			isa = PBXGroup;
 			children = (
-				AD09684226647E740024BC4B /* AppProviderProtocol.swift */,
-				AD09684426647E7D0024BC4B /* FeatureProvider.swift */,
-				AD09684626647E950024BC4B /* VcProvider.swift */,
+				AD09684226647E740024BC4B /* FeatureProviderProtocol.swift */,
 			);
 			path = FeatureProvider;
 			sourceTree = "<group>";
@@ -157,11 +151,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADA81AC12670CBD700A7E520 /* Router.swift in Sources */,
-				AD09684526647E7D0024BC4B /* FeatureProvider.swift in Sources */,
 				AD0968C6266484A70024BC4B /* Requests.swift in Sources */,
-				AD09684726647E950024BC4B /* VcProvider.swift in Sources */,
 				ADA819C826663A0A00A7E520 /* Dependencies.swift in Sources */,
-				AD09684326647E740024BC4B /* AppProviderProtocol.swift in Sources */,
+				AD09684326647E740024BC4B /* FeatureProviderProtocol.swift in Sources */,
 				ADA81ABD266F695E00A7E520 /* Status.swift in Sources */,
 				ADA81ABF266F6A9B00A7E520 /* User.swift in Sources */,
 			);

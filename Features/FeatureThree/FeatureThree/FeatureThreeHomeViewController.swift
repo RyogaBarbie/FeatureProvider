@@ -8,23 +8,87 @@
 import UIKit
 import AppCore
 
-public class FeatureThreeHomeViewController: UIViewController {
+public enum FeatureThreeHomeBuilder {
+    public static func build(
+        status: Status,
+        pageNumber: Int,
+        user: User,
+        featureProvider: FeatureProviderProtocol,
+        someWorker: SomeWorkerProtocol,
+        someRepository: SomeRepositoryProtocol
+    ) -> UIViewController {
+        let useCase = FeatureThreeHomeUsecse(
+            apiClient: APIClient(),
+            dataStore: DataStore(),
+            remocon: RemoteConfig(),
+            someWorker: someWorker,
+            someRepository: someRepository
+        )
+        let vm = FeatureThreeHomeViewModel(
+            useCase: useCase,
+            status: status,
+            pageNumber: pageNumber,
+            user: user
+        )
+        return FeatureThreeHomeViewController(
+            featureProvider: featureProvider,
+            vm: vm
+        )
+    }
+}
+class FeatureThreeHomeViewModel {
+    let useCase: FeatureThreeHomeUsecse
+    let status: Status
+    var pageNumber: Int
+    let user: User
 
-    let appProvider: AppProviderProtocol
+    init(
+        useCase: FeatureThreeHomeUsecse,
+        status: Status,
+        pageNumber: Int,
+        user: User
+    ) {
+        self.useCase = useCase
+        self.status = status
+        self.pageNumber = pageNumber
+        self.user = user
+    }
+}
+
+class FeatureThreeHomeUsecse {
     let apiClient: APIClientProtocol
     let dataStore: DataStoreProtocol
     let remocon: RemoteConfigProtocol
+    let someWorker: SomeWorkerProtocol
+    let someRepository: SomeRepositoryProtocol
 
-    public init(
-        appProvider: AppProviderProtocol,
+    init(
         apiClient: APIClientProtocol,
         dataStore: DataStoreProtocol,
-        remocon: RemoteConfigProtocol
+        remocon: RemoteConfigProtocol,
+        someWorker: SomeWorkerProtocol,
+        someRepository: SomeRepositoryProtocol
     ) {
-        self.appProvider = appProvider
         self.apiClient = apiClient
         self.dataStore = dataStore
         self.remocon = remocon
+        self.someWorker = someWorker
+        self.someRepository = someRepository
+    }
+}
+
+
+public class FeatureThreeHomeViewController: UIViewController {
+
+    let featureProvider: FeatureProviderProtocol
+    let vm: FeatureThreeHomeViewModel
+
+    init(
+        featureProvider: FeatureProviderProtocol,
+        vm: FeatureThreeHomeViewModel
+    ) {
+        self.featureProvider = featureProvider
+        self.vm = vm
 
         super.init(nibName: nil, bundle: nil)
     }

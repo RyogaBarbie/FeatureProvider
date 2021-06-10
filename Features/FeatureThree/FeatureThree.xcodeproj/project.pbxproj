@@ -10,6 +10,7 @@
 		AD096896266480870024BC4B /* libAppCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD096895266480870024BC4B /* libAppCore.a */; };
 		AD0968A92664814E0024BC4B /* FeatureThreeHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0968A82664814E0024BC4B /* FeatureThreeHomeViewController.swift */; };
 		ADA81ABB266F1E4B00A7E520 /* SomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA81ABA266F1E4B00A7E520 /* SomeRepository.swift */; };
+		ADA81B192671B47900A7E520 /* FeatureThreeProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA81B182671B47900A7E520 /* FeatureThreeProviderProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		AD096895266480870024BC4B /* libAppCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAppCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD0968A82664814E0024BC4B /* FeatureThreeHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureThreeHomeViewController.swift; sourceTree = "<group>"; };
 		ADA81ABA266F1E4B00A7E520 /* SomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeRepository.swift; sourceTree = "<group>"; };
+		ADA81B182671B47900A7E520 /* FeatureThreeProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureThreeProviderProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		AD09688C266480730024BC4B /* FeatureThree */ = {
 			isa = PBXGroup;
 			children = (
+				ADA81B172671B45D00A7E520 /* FeatureThreeProvider */,
 				AD0968A82664814E0024BC4B /* FeatureThreeHomeViewController.swift */,
 				ADA81ABA266F1E4B00A7E520 /* SomeRepository.swift */,
 			);
@@ -75,6 +78,14 @@
 				AD096895266480870024BC4B /* libAppCore.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADA81B172671B45D00A7E520 /* FeatureThreeProvider */ = {
+			isa = PBXGroup;
+			children = (
+				ADA81B182671B47900A7E520 /* FeatureThreeProviderProtocol.swift */,
+			);
+			path = FeatureThreeProvider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD0968A92664814E0024BC4B /* FeatureThreeHomeViewController.swift in Sources */,
+				ADA81B192671B47900A7E520 /* FeatureThreeProviderProtocol.swift in Sources */,
 				ADA81ABB266F1E4B00A7E520 /* SomeRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

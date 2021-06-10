@@ -10,8 +10,8 @@ import AppCore
 
 public enum FeatureOneEditBuilder {
     public static func build(
-        pageNumber: Int,
-        appProvider: AppProviderProtocol,
+        user: User,
+        featureProvider: FeatureProviderProtocol,
         someWorker: SomeWorkerProtocol,
         someRepository: SomeRepositoryProtocol
     ) -> FeatureOneEditViewController {
@@ -24,10 +24,10 @@ public enum FeatureOneEditBuilder {
         )
         let vm = FeatureOneEditViewModel(
             useCase: useCase,
-            pageNumber: pageNumber
+            user: user
         )
         return FeatureOneEditViewController(
-            appProvider: appProvider,
+            featureProvider: featureProvider,
             vm: vm
         )
     }
@@ -35,13 +35,13 @@ public enum FeatureOneEditBuilder {
 
 public class FeatureOneEditViewModel {
     let useCase: FeatureOneEditUsecse
-    var pageNumber: Int
+    var user: User
     init(
         useCase: FeatureOneEditUsecse,
-        pageNumber: Int
+        user: User
     ) {
         self.useCase = useCase
-        self.pageNumber = pageNumber
+        self.user = user
     }
 }
 
@@ -70,14 +70,14 @@ public class FeatureOneEditUsecse {
 
 public class FeatureOneEditViewController: UIViewController {
 
-    let appProvider: AppProviderProtocol
+    let featureProvider: FeatureProviderProtocol
     let vm: FeatureOneEditViewModel
 
     public init(
-        appProvider: AppProviderProtocol,
+        featureProvider: FeatureProviderProtocol,
         vm: FeatureOneEditViewModel
     ) {
-        self.appProvider = appProvider
+        self.featureProvider = featureProvider
         self.vm = vm
 
         super.init(nibName: nil, bundle: nil)

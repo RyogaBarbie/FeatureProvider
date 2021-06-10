@@ -8,23 +8,88 @@
 import UIKit
 import AppCore
 
-public class FeatureTwoHomeViewController: UIViewController {
+public enum FeatureTwoHomeBuilder {
+    public static func build(
+        status: Status,
+        pageNumber: Int,
+        user: User,
+        featureProvider: FeatureProviderProtocol,
+        someWorker: SomeWorkerProtocol,
+        someRepository: SomeRepositoryProtocol
+    ) -> UIViewController {
+        let useCase = FeatureTwoHomeUsecse(
+            apiClient: APIClient(),
+            dataStore: DataStore(),
+            remocon: RemoteConfig(),
+            someWorker: someWorker,
+            someRepository: someRepository
+        )
+        let vm = FeatureTwoHomeViewModel(
+            useCase: useCase,
+            status: status,
+            pageNumber: pageNumber,
+            user: user
+        )
+        return FeatureTwoHomeViewController(
+            featureProvider: featureProvider,
+            vm: vm
+        )
+    }
+}
+class FeatureTwoHomeViewModel {
+    let useCase: FeatureTwoHomeUsecse
+    let status: Status
+    var pageNumber: Int
+    let user: User
 
-    let appProvider: AppProviderProtocol
+    init(
+        useCase: FeatureTwoHomeUsecse,
+        status: Status,
+        pageNumber: Int,
+        user: User
+    ) {
+        self.useCase = useCase
+        self.status = status
+        self.pageNumber = pageNumber
+        self.user = user
+    }
+}
+
+class FeatureTwoHomeUsecse {
     let apiClient: APIClientProtocol
     let dataStore: DataStoreProtocol
     let remocon: RemoteConfigProtocol
+    let someWorker: SomeWorkerProtocol
+    let someRepository: SomeRepositoryProtocol
 
-    public init(
-        appProvider: AppProviderProtocol,
+    init(
         apiClient: APIClientProtocol,
         dataStore: DataStoreProtocol,
-        remocon: RemoteConfigProtocol
+        remocon: RemoteConfigProtocol,
+        someWorker: SomeWorkerProtocol,
+        someRepository: SomeRepositoryProtocol
     ) {
-        self.appProvider = appProvider
         self.apiClient = apiClient
         self.dataStore = dataStore
         self.remocon = remocon
+        self.someWorker = someWorker
+        self.someRepository = someRepository
+    }
+}
+
+
+
+public class FeatureTwoHomeViewController: UIViewController {
+
+    let featureProvider: FeatureProviderProtocol
+    let vm: FeatureTwoHomeViewModel
+
+    init(
+        featureProvider: FeatureProviderProtocol,
+        vm: FeatureTwoHomeViewModel
+    ) {
+        self.featureProvider = featureProvider
+        self.vm = vm
 
         super.init(nibName: nil, bundle: nil)
     }

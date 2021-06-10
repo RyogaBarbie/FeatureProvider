@@ -11,6 +11,7 @@
 		AD0968A72664811F0024BC4B /* FeatureOneHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0968A62664811F0024BC4B /* FeatureOneHomeViewController.swift */; };
 		ADA8197B2664B07900A7E520 /* FeatureOneShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8197A2664B07900A7E520 /* FeatureOneShowViewController.swift */; };
 		ADA8197D2664B16600A7E520 /* FeatureOneEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8197C2664B16600A7E520 /* FeatureOneEditViewController.swift */; };
+		ADA81B0D2671B2C200A7E520 /* FeatureOneProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA81B0C2671B2C200A7E520 /* FeatureOneProviderProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,7 @@
 		AD0968A62664811F0024BC4B /* FeatureOneHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureOneHomeViewController.swift; sourceTree = "<group>"; };
 		ADA8197A2664B07900A7E520 /* FeatureOneShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureOneShowViewController.swift; sourceTree = "<group>"; };
 		ADA8197C2664B16600A7E520 /* FeatureOneEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureOneEditViewController.swift; sourceTree = "<group>"; };
+		ADA81B0C2671B2C200A7E520 /* FeatureOneProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureOneProviderProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 		AD09686626647FA20024BC4B /* FeatureOne */ = {
 			isa = PBXGroup;
 			children = (
+				ADA81B0B2671B20400A7E520 /* FeatureOneProvider */,
 				AD0968A62664811F0024BC4B /* FeatureOneHomeViewController.swift */,
 				ADA8197A2664B07900A7E520 /* FeatureOneShowViewController.swift */,
 				ADA8197C2664B16600A7E520 /* FeatureOneEditViewController.swift */,
@@ -78,6 +81,14 @@
 				AD09689B266480A20024BC4B /* libAppCore.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADA81B0B2671B20400A7E520 /* FeatureOneProvider */ = {
+			isa = PBXGroup;
+			children = (
+				ADA81B0C2671B2C200A7E520 /* FeatureOneProviderProtocol.swift */,
+			);
+			path = FeatureOneProvider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADA81B0D2671B2C200A7E520 /* FeatureOneProviderProtocol.swift in Sources */,
 				AD0968A72664811F0024BC4B /* FeatureOneHomeViewController.swift in Sources */,
 				ADA8197D2664B16600A7E520 /* FeatureOneEditViewController.swift in Sources */,
 				ADA8197B2664B07900A7E520 /* FeatureOneShowViewController.swift in Sources */,

@@ -1,6 +1,6 @@
 //
 //  Router.swift
-//  AppProvider
+//  FeatureProvider
 //
 //  Created by yamamura ryoga on 2021/06/09.
 //
@@ -20,7 +20,7 @@ extension Router {
             if let controller = UIViewController.topViewController() {
                 let vc = FeatureOneHomeBuilder.build(
                     pageNumber: pageNumber,
-                    appProvider: AppProvider(),
+                    featureProvider: FeatureProvider(),
                     someWorker: SomeWorker(),
                     someRepository: SomeRepository()
                 )
