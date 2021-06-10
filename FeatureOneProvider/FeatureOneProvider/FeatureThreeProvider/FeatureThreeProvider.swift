@@ -22,7 +22,7 @@ public class FeatureThreeProvider: FeatureThreeProviderProtocol {
 //            status: request.status,
 //            pageNumber: request.pageNumber,
 //            user: request.user,
-//            featureProvider: self,
+//            featureTwoProvider: FeatureTwoProvider(),
 //            someWorker: SomeWorker(),
 //            someRepository: SomeRepository()
 //        )

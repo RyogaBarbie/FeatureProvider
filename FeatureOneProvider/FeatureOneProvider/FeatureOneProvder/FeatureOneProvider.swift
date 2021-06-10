@@ -18,7 +18,7 @@ public class FeatureOneProvider: FeatureOneProviderProtocol {
     public func apply(_ request: FeatureOneHomeRequest) -> UIViewController {
 //        return FeatureOneHomeBuilder.build(
 //            pageNumber: request.pageNumber,
-//            featureProvider: self,
+//            featureOneProvider: self,
 //            someWorker: SomeWorker(),
 //            someRepository: SomeRepository()
 //        )
@@ -30,7 +30,19 @@ public class FeatureOneProvider: FeatureOneProviderProtocol {
 //            status: request.status,
 //            pageNumber: request.pageNumber,
 //            user: request.user,
-//            featureProvider: self,
+//            featureOneProvider: self,
+//            someWorker: SomeWorker(),
+//            someRepository: SomeRepository()
+//        )
+        return UIViewController()
+    }
+
+    public func apply(_ request: FeatureThreeHomeRequest) -> UIViewController {
+//        return FeatureThreeHomeBuilder.build(
+//            status: request.status,
+//            pageNumber: request.pageNumber,
+//            user: request.user,
+//            featureThreeProvider: FeatureThreeProvider(),
 //            someWorker: SomeWorker(),
 //            someRepository: SomeRepository()
 //        )

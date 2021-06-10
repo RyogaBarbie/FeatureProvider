@@ -20,7 +20,7 @@ public class FeatureTwoProvider: FeatureTwoProviderProtocol {
 //    func apply(_ request: FeatureOneShowRequest) -> UIViewController {
 //        return FeatureOneShowBuilder.build(
 //            pageNumber: request.pageNumber,
-//            featureProvider: self,
+//            featureOneProvider: FeatureOneProvider(),
 //            someWorker: SomeWorker(),
 //            someRepository: SomeRepository()
 //        )
@@ -31,7 +31,7 @@ public class FeatureTwoProvider: FeatureTwoProviderProtocol {
 //            status: request.status,
 //            pageNumber: request.pageNumber,
 //            user: request.user,
-//            featureProvider: self,
+//            featureThreeProvider: FeatureThreeProvider(),
 //            someWorker: SomeWorker(),
 //            someRepository: SomeRepository()
 //        )

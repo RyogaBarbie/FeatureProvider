@@ -13,6 +13,5 @@ public protocol FeatureOneProviderProtocol {
     func navigate(_ router: Router)
     func apply(_ request: FeatureOneHomeRequest) -> UIViewController
     func apply(_ request: FeatureOneShowRequest) -> UIViewController
-//    func apply(_ request: FeatureOneEditRequest) -> UIViewController
-//    func apply(_ request: FeatureThreeHomeRequest) -> UIViewController
+    func apply(_ request: FeatureThreeHomeRequest) -> UIViewController
 }
