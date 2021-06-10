@@ -14,8 +14,8 @@ import FeatureThree
 
 class AppProvider: AppProviderProtocol {
     // 既存のGodRouterの取り回し
-    func navigate(_ destination: RouterDestination) {
-        Router.navigate(destination)
+    func navigate(_ router: Router) {
+        router.navigate()
     }
     func apply(_ request: FeatureOneHomeRequest) -> UIViewController {
         return FeatureOneHomeBuilder.build(

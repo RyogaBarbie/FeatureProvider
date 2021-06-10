@@ -13,9 +13,9 @@ import FeatureTwo
 import FeatureThree
 
 // 既存のKURASHIRU Router
-public enum Router {
-    static func navigate(_ destination: RouterDestination) {
-        switch destination {
+extension Router {
+    func navigate() {
+        switch self {
         case .featureOneEdit(let pageNumber):
             if let controller = UIViewController.topViewController() {
                 let vc = FeatureOneHomeBuilder.build(

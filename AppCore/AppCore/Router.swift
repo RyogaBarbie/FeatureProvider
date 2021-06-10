@@ -7,7 +7,8 @@
 
 import Foundation
 
-public enum RouterDestination {
+// 既存のKURASHIRU Router
+public enum Router {
     case featureOneEdit(pageNumber: Int)
     case featureThreeHome
 

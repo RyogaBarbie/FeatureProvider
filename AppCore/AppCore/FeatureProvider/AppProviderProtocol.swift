@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 public protocol AppProviderProtocol {
-    func navigate(_ destination: RouterDestination) 
+    func navigate(_ router: Router)
     func apply(_ request: FeatureOneHomeRequest) -> UIViewController
     func apply(_ request: FeatureOneShowRequest) -> UIViewController
 //    func apply(_ request: FeatureOneEditRequest) -> UIViewController
