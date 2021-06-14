@@ -11,7 +11,7 @@ import AppCore
 public enum FeatureOneEditBuilder {
     public static func build(
         user: User,
-        featureProvider: FeatureProviderProtocol,
+        featureProvider: FeatureOneBuildersProtocol,
         someWorker: SomeWorkerProtocol,
         someRepository: SomeRepositoryProtocol
     ) -> FeatureOneEditViewController {
@@ -70,11 +70,11 @@ public class FeatureOneEditUsecse {
 
 public class FeatureOneEditViewController: UIViewController {
 
-    let featureProvider: FeatureProviderProtocol
+    let featureProvider: FeatureOneBuildersProtocol
     let vm: FeatureOneEditViewModel
 
     public init(
-        featureProvider: FeatureProviderProtocol,
+        featureProvider: FeatureOneBuildersProtocol,
         vm: FeatureOneEditViewModel
     ) {
         self.featureProvider = featureProvider

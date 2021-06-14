@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 import AppCore
 
+// FeatureOneProvider app用
 public protocol FeatureTwoProviderProtocol {
     func navigate(_ router: Router)
 //    func apply(_ request: FeatureOneShowRequest) -> UIViewController

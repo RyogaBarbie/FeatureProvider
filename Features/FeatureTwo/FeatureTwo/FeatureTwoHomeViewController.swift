@@ -13,7 +13,7 @@ public enum FeatureTwoHomeBuilder {
         status: Status,
         pageNumber: Int,
         user: User,
-        featureProvider: FeatureProviderProtocol,
+        featureProvider: FeatureTwoBuildersProtocol,
         someWorker: SomeWorkerProtocol,
         someRepository: SomeRepositoryProtocol
     ) -> UIViewController {
@@ -81,11 +81,11 @@ class FeatureTwoHomeUsecse {
 
 public class FeatureTwoHomeViewController: UIViewController {
 
-    let featureProvider: FeatureProviderProtocol
+    let featureProvider: FeatureTwoBuildersProtocol
     let vm: FeatureTwoHomeViewModel
 
     init(
-        featureProvider: FeatureProviderProtocol,
+        featureProvider: FeatureTwoBuildersProtocol,
         vm: FeatureTwoHomeViewModel
     ) {
         self.featureProvider = featureProvider

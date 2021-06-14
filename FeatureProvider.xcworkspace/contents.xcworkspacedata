@@ -31,8 +31,4 @@
          location = "group:FeatureOneProvider/FeatureOneProvider.xcodeproj">
       </FileRef>
    </Group>
-   <Group
-      location = "container:"
-      name = "VcProvider">
-   </Group>
 </Workspace>

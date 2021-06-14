@@ -13,7 +13,7 @@ public enum FeatureThreeHomeBuilder {
         status: Status,
         pageNumber: Int,
         user: User,
-        featureProvider: FeatureProviderProtocol,
+        featureProvider: FeatureThreeBuildersProtocol,
         someWorker: SomeWorkerProtocol,
         someRepository: SomeRepositoryProtocol
     ) -> UIViewController {
@@ -80,11 +80,11 @@ class FeatureThreeHomeUsecse {
 
 public class FeatureThreeHomeViewController: UIViewController {
 
-    let featureProvider: FeatureProviderProtocol
+    let featureProvider: FeatureThreeBuildersProtocol
     let vm: FeatureThreeHomeViewModel
 
     init(
-        featureProvider: FeatureProviderProtocol,
+        featureProvider: FeatureThreeBuildersProtocol,
         vm: FeatureThreeHomeViewModel
     ) {
         self.featureProvider = featureProvider

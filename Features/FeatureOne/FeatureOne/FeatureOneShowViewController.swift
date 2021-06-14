@@ -15,7 +15,7 @@ public enum FeatureOneShowBuilder {
         status: Status,
         pageNumber: Int,
         user: User,
-        featureProvider: FeatureProviderProtocol,
+        featureProvider: FeatureOneBuildersProtocol,
         someWorker: SomeWorkerProtocol,
         someRepository: SomeRepositoryProtocol
     ) -> UIViewController {
@@ -82,11 +82,11 @@ class FeatureOneShowUsecse {
 
 class FeatureOneShowViewController: UIViewController {
 
-    let featureProvider: FeatureProviderProtocol
+    let featureProvider: FeatureOneBuildersProtocol
     let vm: FeatureOneShowViewModel
 
     init(
-        featureProvider: FeatureProviderProtocol,
+        featureProvider: FeatureOneBuildersProtocol,
         vm: FeatureOneShowViewModel
     ) {
         self.featureProvider = featureProvider
