@@ -17,7 +17,7 @@ public class FeatureTwoProvider: FeatureTwoProviderProtocol {
 //        router.navigate()
     }
 
-//    func apply(_ request: FeatureOneShowRequest) -> UIViewController {
+//    func build(_ request: FeatureOneShowRequest) -> UIViewController {
 //        return FeatureOneShowBuilder.build(
 //            pageNumber: request.pageNumber,
 //            featureOneProvider: FeatureOneProvider(),
@@ -26,7 +26,7 @@ public class FeatureTwoProvider: FeatureTwoProviderProtocol {
 //        )
 //    }
     
-//    func apply(_ request: FeatureThreeHomeRequest) -> UIViewController {
+//    func build(_ request: FeatureThreeHomeRequest) -> UIViewController {
 //        return FeatureThreeHomeBuilder.build(
 //            status: request.status,
 //            pageNumber: request.pageNumber,

@@ -98,7 +98,7 @@ public class FeatureOneHomeViewController: UIViewController {
             pageNumber: 88,
             user: User(name: "Bob", age: 38, savings: 1000)
         )
-        let vc = featureProvider.apply(request)
+        let vc = featureProvider.build(request)
         self.navigationController?.pushViewController(vc, animated: true)
     }
 
@@ -108,7 +108,7 @@ public class FeatureOneHomeViewController: UIViewController {
             pageNumber: 88,
             user: User(name: "Bob", age: 38, savings: 1000)
         )
-        let vc = featureProvider.apply(request)
+        let vc = featureProvider.build(request)
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

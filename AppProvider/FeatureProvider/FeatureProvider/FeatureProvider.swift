@@ -12,6 +12,7 @@ import FeatureOne
 import FeatureTwo
 import FeatureThree
 
+// FeatureProviderはRouterとBuilderの概念を持ったもの
 class FeatureProvider: FeatureProviderProtocol {
     // 既存のGodRouterの取り回し
     func navigate(_ router: Router) {
@@ -24,7 +25,7 @@ class FeatureProvider: FeatureProviderProtocol {
         baseTabBarController.moveToTab(tab)
     }
 
-    func apply(_ request: FeatureOneHomeRequest) -> UIViewController {
+    func build(_ request: FeatureOneHomeRequest) -> UIViewController {
         return FeatureOneHomeBuilder.build(
             pageNumber: request.pageNumber,
             featureProvider: self,
@@ -32,7 +33,7 @@ class FeatureProvider: FeatureProviderProtocol {
             someRepository: SomeRepository()
         )
     }
-    func apply(_ request: FeatureOneShowRequest) -> UIViewController {
+    func build(_ request: FeatureOneShowRequest) -> UIViewController {
         return FeatureOneShowBuilder.build(
             status: request.status,
             pageNumber: request.pageNumber,
@@ -42,7 +43,7 @@ class FeatureProvider: FeatureProviderProtocol {
             someRepository: SomeRepository()
         )
     }
-    func apply(_ request: FeatureOneEditRequest) -> UIViewController {
+    func build(_ request: FeatureOneEditRequest) -> UIViewController {
         return FeatureOneEditBuilder.build(
             user: request.user,
             featureProvider: self,
@@ -50,7 +51,7 @@ class FeatureProvider: FeatureProviderProtocol {
             someRepository: SomeRepository()
         )
     }
-    func apply(_ request: FeatureTwoHomeRequest) -> UIViewController {
+    func build(_ request: FeatureTwoHomeRequest) -> UIViewController {
         return FeatureTwoHomeBuilder.build(
             status: request.status,
             pageNumber: request.pageNumber,
@@ -60,7 +61,7 @@ class FeatureProvider: FeatureProviderProtocol {
             someRepository: SomeRepository()
         )
     }
-    func apply(_ request: FeatureThreeHomeRequest) -> UIViewController {
+    func build(_ request: FeatureThreeHomeRequest) -> UIViewController {
         return FeatureThreeHomeBuilder.build(
             status: request.status,
             pageNumber: request.pageNumber,

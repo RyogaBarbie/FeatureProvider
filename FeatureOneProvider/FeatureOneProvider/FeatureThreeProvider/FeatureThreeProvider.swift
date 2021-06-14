@@ -17,7 +17,7 @@ public class FeatureThreeProvider: FeatureThreeProviderProtocol {
 //        router.navigate()
     }
 
-//    public func apply(_ request: FeatureTwoHomeRequest) -> UIViewController {
+//    public func build(_ request: FeatureTwoHomeRequest) -> UIViewController {
 //        return FeatureTwoHomeBuilder.build(
 //            status: request.status,
 //            pageNumber: request.pageNumber,

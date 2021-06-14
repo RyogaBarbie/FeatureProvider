@@ -15,7 +15,7 @@ import FeatureThree
 public class FeatureOneProvider: FeatureOneProviderProtocol {
     public func navigate(_ router: Router) {}
 
-    public func apply(_ request: FeatureOneHomeRequest) -> UIViewController {
+    public func build(_ request: FeatureOneHomeRequest) -> UIViewController {
 //        return FeatureOneHomeBuilder.build(
 //            pageNumber: request.pageNumber,
 //            featureOneProvider: self,
@@ -25,7 +25,7 @@ public class FeatureOneProvider: FeatureOneProviderProtocol {
         return UIViewController()
     }
 
-    public func apply(_ request: FeatureOneShowRequest) -> UIViewController {
+    public func build(_ request: FeatureOneShowRequest) -> UIViewController {
 //        return FeatureOneShowBuilder.build(
 //            status: request.status,
 //            pageNumber: request.pageNumber,
@@ -37,7 +37,7 @@ public class FeatureOneProvider: FeatureOneProviderProtocol {
         return UIViewController()
     }
 
-    public func apply(_ request: FeatureThreeHomeRequest) -> UIViewController {
+    public func build(_ request: FeatureThreeHomeRequest) -> UIViewController {
 //        return FeatureThreeHomeBuilder.build(
 //            status: request.status,
 //            pageNumber: request.pageNumber,

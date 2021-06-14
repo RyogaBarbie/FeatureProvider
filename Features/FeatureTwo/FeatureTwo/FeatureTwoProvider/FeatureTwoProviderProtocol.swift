@@ -12,6 +12,6 @@ import AppCore
 // FeatureOneProvider app用
 public protocol FeatureTwoProviderProtocol {
     func navigate(_ router: Router)
-//    func apply(_ request: FeatureOneShowRequest) -> UIViewController
-//    func apply(_ request: FeatureThreeHomeRequest) -> UIViewController
+//    func build(_ request: FeatureOneShowRequest) -> UIViewController
+//    func build(_ request: FeatureThreeHomeRequest) -> UIViewController
 }

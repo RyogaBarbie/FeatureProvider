@@ -12,7 +12,7 @@ import AppCore
 // FeatureOneProvider app用
 public protocol FeatureOneProviderProtocol {
     func navigate(_ router: Router)
-    func apply(_ request: FeatureOneHomeRequest) -> UIViewController
-    func apply(_ request: FeatureOneShowRequest) -> UIViewController
-    func apply(_ request: FeatureThreeHomeRequest) -> UIViewController
+    func build(_ request: FeatureOneHomeRequest) -> UIViewController
+    func build(_ request: FeatureOneShowRequest) -> UIViewController
+    func build(_ request: FeatureThreeHomeRequest) -> UIViewController
 }

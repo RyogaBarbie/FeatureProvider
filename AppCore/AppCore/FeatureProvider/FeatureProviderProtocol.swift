@@ -11,11 +11,11 @@ import UIKit
 //public protocol FeatureProviderProtocol {
 //    func navigate(_ router: Router)
 //    func moveToTab(_ tab: Tab)
-//    func apply(_ request: FeatureOneHomeRequest) -> UIViewController
-//    func apply(_ request: FeatureOneShowRequest) -> UIViewController
-//    func apply(_ request: FeatureOneEditRequest) -> UIViewController
-//    func apply(_ request: FeatureTwoHomeRequest) -> UIViewController
-//    func apply(_ request: FeatureThreeHomeRequest) -> UIViewController
+//    func build(_ request: FeatureOneHomeRequest) -> UIViewController
+//    func build(_ request: FeatureOneShowRequest) -> UIViewController
+//    func build(_ request: FeatureOneEditRequest) -> UIViewController
+//    func build(_ request: FeatureTwoHomeRequest) -> UIViewController
+//    func build(_ request: FeatureThreeHomeRequest) -> UIViewController
 //}
 
 // MARK: Router
@@ -28,13 +28,13 @@ public protocol TabRouterProtocol {
 
 // MARK: Builder
 public protocol FeatureOneScreenHomeBuilderProtocol {
-    func apply(_ request: FeatureOneHomeRequest) -> UIViewController
+    func build(_ request: FeatureOneHomeRequest) -> UIViewController
 }
 public protocol FeatureOneScreenShowBuilderProtocol {
-    func apply(_ request: FeatureOneShowRequest) -> UIViewController
+    func build(_ request: FeatureOneShowRequest) -> UIViewController
 }
 public protocol FeatureOneScreenEditBuilderProtocol {
-    func apply(_ request: FeatureOneEditRequest) -> UIViewController
+    func build(_ request: FeatureOneEditRequest) -> UIViewController
 }
 public typealias FeatureOneBuildersProtocol = FeatureOneScreenHomeBuilderProtocol
     & FeatureOneScreenShowBuilderProtocol
@@ -44,7 +44,7 @@ public typealias FeatureOneBuildersProtocol = FeatureOneScreenHomeBuilderProtoco
     & TabRouterProtocol
 
 public protocol FeatureTwoScreenHomeBuilderProtocol {
-    func apply(_ request: FeatureTwoHomeRequest) -> UIViewController
+    func build(_ request: FeatureTwoHomeRequest) -> UIViewController
 }
 public typealias FeatureTwoBuildersProtocol = FeatureTwoScreenHomeBuilderProtocol
     & FeatureOneScreenHomeBuilderProtocol
@@ -53,7 +53,7 @@ public typealias FeatureTwoBuildersProtocol = FeatureTwoScreenHomeBuilderProtoco
     & TabRouterProtocol
 
 public protocol FeatureThreeScreenHomeBuilderProtocol {
-    func apply(_ request: FeatureThreeHomeRequest) -> UIViewController
+    func build(_ request: FeatureThreeHomeRequest) -> UIViewController
 }
 public typealias FeatureThreeBuildersProtocol = FeatureThreeScreenHomeBuilderProtocol
     & FeatureTwoScreenHomeBuilderProtocol
@@ -61,4 +61,3 @@ public typealias FeatureThreeBuildersProtocol = FeatureThreeScreenHomeBuilderPro
 
 public typealias AllBuildersProtocol = FeatureOneBuildersProtocol & FeatureTwoBuildersProtocol & FeatureThreeScreenHomeBuilderProtocol
 public typealias FeatureProviderProtocol = AllBuildersProtocol & UniversalLinksRouterProtocol & TabRouterProtocol
-

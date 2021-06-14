@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         window = UIWindow(frame: UIScreen.main.bounds)
         let request = FeatureOneHomeRequest(pageNumber: 0)
-        window!.rootViewController = featureProvider.apply(request)
+        window!.rootViewController = featureProvider.build(request)
         window!.makeKeyAndVisible()
 
         return true
