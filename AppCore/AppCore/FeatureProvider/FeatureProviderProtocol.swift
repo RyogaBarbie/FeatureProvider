@@ -40,6 +40,8 @@ public typealias FeatureOneBuildersProtocol = FeatureOneScreenHomeBuilderProtoco
     & FeatureOneScreenShowBuilderProtocol
     & FeatureOneScreenEditBuilderProtocol
     & FeatureTwoScreenHomeBuilderProtocol
+
+public typealias FeatureOneProvider = FeatureOneBuildersProtocol
     & UniversalLinksRouterProtocol
     & TabRouterProtocol
 
